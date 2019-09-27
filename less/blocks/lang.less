@@ -1,0 +1,18 @@
+.lang__link {
+  margin-right: 5px;
+  
+  &::after {
+    content: "/";
+    margin-left: 5px;
+    color: #1A1A1A !important;
+  }
+  
+  &:last-child::after {
+    display: none;
+  }
+  
+  &--active {
+    color: @brown;
+    pointer-events: none;
+  }
+}
