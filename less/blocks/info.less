@@ -1,0 +1,41 @@
+.info {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  
+  .title {
+    margin-left: 0;
+    text-align: left;
+    
+    &::before {
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+.info__text {
+  max-width: 930px;
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  ul {
+    .reset();
+    list-style: none;
+    margin-bottom: 30px;
+    
+    li {
+      position: relative;
+      padding-left: 12px;
+      
+      &::before {
+        content: "-";
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
