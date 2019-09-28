@@ -1,0 +1,137 @@
+.footer {
+  color: #fff;
+  background-color: #1E243A;
+  
+  .lang {
+    margin-top: 50px;
+  }
+  .lang__link {
+    color: rgba(255,255,255,0.5);
+    
+    &--active {
+      color: @brown;
+    }
+  }
+  .lang__link::after {
+    color: rgba(255,255,255,0.5) !important;
+  }
+}
+
+.footer__top {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+  p {
+    margin: 0;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Playfair Display", "Arial", sans-serif;
+}
+
+.footer__info {
+  width: 230px;
+  
+  p {
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(255,255,255,0.5);
+  }
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  img {
+    display: block;
+    margin-right: 35px;
+  }
+  strong {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2px;
+      height: 55px;
+      background-color: #fff;
+    }
+  }
+}
+
+.footer__menu {
+  width: 210px;
+  padding-left: 57px;
+  border-left: 1px solid rgba(196,196,196, 0.6);
+}
+
+.footer__nav {
+  .reset();
+  list-style: none;
+  line-height: 18px;
+  
+  li {
+    margin-bottom: 14px;
+    
+    a:hover,
+    a:active {
+      color: @brown;
+    }
+  }
+}
+
+.footer__service {
+  width: 290px;
+  padding-right: 45px;
+  border-right: 1px solid rgba(196,196,196, 0.6);
+}
+
+.footer__contacts {
+  width: 250px;
+  line-height: 22px;
+  
+  b {
+    margin-right: 5px;
+  }
+  a:hover,
+  a:active {
+    color: @brown;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .footer__title {
+    margin-bottom: 20px;
+  }
+}
