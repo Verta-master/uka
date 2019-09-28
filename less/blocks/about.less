@@ -1,15 +1,21 @@
 .about {
-  padding-bottom: 80px;
+  padding-bottom: 70px;
   padding-top: 80px;
   
-  .title {
+  p {
     margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    margin-top: -10px;
+    margin-bottom: 55px;
     text-align: left;
     
     &::before {
       left: 0;
       transform: none;
-      bottom: -20px;
+      bottom: -30px;
       top: auto;
     }
   }
@@ -21,15 +27,28 @@
 }
 
 .about__img {
-  width: 48%;
+  position: relative;
+  width: 49%;
   
   img {
     display: block;
     width: 100%;
     height: auto;
   }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/images/logo-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .about__info {
-  width: 48%;
+  width: 48.5%;
 }
