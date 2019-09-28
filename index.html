@@ -50,7 +50,7 @@
         <div class="promo__text">
           <p>Каждый Клиент может рассчитывать на компетентную юридическую помощь.</p>
         </div>
-        <a href="#" class="btn promo__btn">Бесплатная консультация</a>
+        <a data-fancybox="" data-src="#call" href="javascript:;" class="btn promo__btn">Бесплатная консультация</a>
       </div>
     </section>
     
@@ -200,7 +200,7 @@
         <div class="footer__info">
           <div class="footer__logo">
             <img src="img/images/logo-icon.png" alt="Правовая компания">
-            <strong>Правовая компания</strong>
+            <strong>Правовая<br>компания</strong>
           </div>
           <p>Ваша надежная защита в юриспруденции. Наша квалификация дает возможность решать задачи любой сложности.</p>
           <div class="lang">
@@ -245,7 +245,17 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="modal__title">Заказать консультацию</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Ваш номер">
+      <input type="email" class="form__input" placeholder="Ваша электронная почта">
+      <label for="message" class="form__label">Ваше сообщение</label>
+      <textarea id="message" class="form__message"></textarea>
+      <input type="checkbox" id="check2" class="form__checkbox">
+      <label for="check2" class="form__check">Отправляя форму, вы даете согласие на обработку своих персональных данных.</label>
+      <button type="submit" class="btn form__btn">Заказать</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>

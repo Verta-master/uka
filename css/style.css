@@ -684,6 +684,7 @@ h1::before {
 .service__item p {
   margin-top: 0;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 .service__item .service__title {
   margin-top: 0;
@@ -1346,6 +1347,61 @@ h1::before {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
+}
+.info {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.info .title {
+  margin-left: 0;
+  text-align: left;
+}
+.info .title::before {
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
+}
+.info__text {
+  max-width: 930px;
+}
+.info__text p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.info__text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.info__text ul li {
+  position: relative;
+  padding-left: 12px;
+}
+.info__text ul li::before {
+  content: "-";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal .form__input {
+  margin-bottom: 20px;
+}
+.modal .form__message {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.modal .form__btn {
+  margin-top: 30px;
+}
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 @media (max-width: 1200px) {
   .wrapper {
