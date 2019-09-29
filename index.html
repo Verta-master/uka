@@ -7,6 +7,7 @@
   <title>Правовая компания</title>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -45,12 +46,20 @@
   
   <main>
     <section class="promo">
-      <div class="wrapper">
-        <h1 class="title">Профессиональная защита<br>прав предпринимателей</h1>
-        <div class="promo__text">
-          <p>Каждый Клиент может рассчитывать на компетентную юридическую помощь.</p>
+      <div class="swiper-container promo__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/bg-main.jpg);"></div>
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/slide.jpg);"></div>
         </div>
-        <a data-fancybox="" data-src="#call" href="javascript:;" class="btn promo__btn">Бесплатная консультация</a>
+      </div>
+      <div class="promo__info">
+        <div class="wrapper">
+          <h1 class="title">Профессиональная защита<br>прав предпринимателей</h1>
+          <div class="promo__text">
+            <p>Каждый Клиент может рассчитывать на компетентную юридическую помощь.</p>
+          </div>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="btn promo__btn">Бесплатная консультация</a>
+        </div>
       </div>
     </section>
     
@@ -261,5 +270,15 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.promo__slider', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      effect: 'fade',
+    });
+  </script>
 </body>
 </html>
